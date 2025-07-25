@@ -1,0 +1,11 @@
+[Unit]
+Description=AFK detection helper for the AFKland BetterDiscord plugin
+After=graphical-session.target
+
+[Install]
+WantedBy=graphical-session.target
+
+[Service]
+ExecStart=bdplugin-afkland-helper
+Restart=always
+RestartSec=30
